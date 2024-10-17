@@ -3,9 +3,6 @@
 ## Project Overview
 This project analyzes the daily stock prices of GameStop (GME) from May 24, 2023, to May 25, 2024. The objective is to explore stock volatility, identify influential trading days, and apply robust regression techniques to model the stock price trend over time. The dataset includes 253 trading days, and the analysis aims to uncover meaningful insights into stock price movements and outliers.
 
-## Analysis Report
-[View the full analysis report](GME_analysis_report.Rmd)
-
 ## Table of Contents
 1. [Data Overview](#data-overview)
 2. [Exploratory Data Analysis](#exploratory-data-analysis)
@@ -36,7 +33,7 @@ We begin by visualizing the trend in adjusted closing prices over time, using a 
 - Scatter plot of adjusted closing price vs. trading day (Day_Num).
 - Side-by-side comparison of linear regression and robust regression models.
 
-![GME Stock Scatter Plot: Adjusted Close vs. Day_Num](plot/GME_scatter_plot.png)
+![GME Stock Scatter Plot: Adjusted Close vs. Day_Num](plots/GME_scatter_plot.png)
 
 **Figure 1**: Scatter plot showing the adjusted closing prices of GameStop over time (Day_Num). The red line represents the fitted linear regression line, which shows a general downward trend over time.
 
@@ -51,15 +48,15 @@ To better understand which trading days had the most significant influence on th
 ### Influence Plots:
 - **Influence on Alpha (Intercept)**:
   
-  ![Influence on Alpha](plot/GME_influence_alpha.jpeg)
+  ![Influence on Alpha](plots/GME_influence_alpha.jpeg)
 
 - **Influence on Beta (Slope)**:
   
-  ![Influence on Beta](plot/GME_influence_beta.jpeg)
+  ![Influence on Beta](plots/GME_influence_beta.jpeg)
 
 - **Overall Influence on Parameters**:
   
-  ![Influence on Parameters](plot/GME_influence_theta.jpeg)
+  ![Influence on Parameters](plots/GME_influence_theta.jpeg)
 
 **Figure 2**: Influence plots showing how individual trading days impacted the model's intercept (alpha) and slope (beta). A few key days had an outsized influence on the overall trend, particularly around May 2024.
 
@@ -74,7 +71,7 @@ To mitigate the effect of outliers, we apply a robust regression technique using
 ### Robust Regression Plot:
 - **Robust Regression vs. Ordinary Least Squares (OLS)**:
   
-  ![Robust Regression vs OLS](plot/GME_robust_regression.png)
+  ![Robust Regression vs OLS](plots/GME_robust_regression.png)
 
 **Figure 3**: A comparison between ordinary least squares (OLS) and robust regression models. The robust regression model (green line) is less influenced by outliers, providing a more stable trendline than the OLS model (red line).
 
