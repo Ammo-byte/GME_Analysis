@@ -19,3 +19,4 @@ print(fit)
 
 # Add the fitted regression line to the existing plot
 abline(fit, col = "red", lwd = 2)
+

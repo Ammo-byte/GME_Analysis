@@ -48,15 +48,15 @@ To better understand which trading days had the most significant influence on th
 ### Influence Plots:
 - **Influence on Alpha (Intercept)**:
   
-  ![Influence on Alpha](plots/GME_influence_alpha.jpeg)
+  ![Influence on Alpha](plots/GME_influence_alpha.png)
 
 - **Influence on Beta (Slope)**:
   
-  ![Influence on Beta](plots/GME_influence_beta.jpeg)
+  ![Influence on Beta](plots/GME_influence_beta.png)
 
 - **Overall Influence on Parameters**:
   
-  ![Influence on Parameters](plots/GME_influence_theta.jpeg)
+  ![Influence on Parameters](plots/GME_influence_theta.png)
 
 **Figure 2**: Influence plots showing how individual trading days impacted the model's intercept (alpha) and slope (beta). A few key days had an outsized influence on the overall trend, particularly around May 2024.
 
