@@ -48,7 +48,7 @@ To better understand which trading days had the most significant influence on th
 ### Influence Plots:
 - **Influence on Alpha (Intercept)**:
   
-  ![Influence on Alpha](plots/GME_influence_alpha.png)
+  ![Influence on Alpha](plots/GME_influence_alph.png)
 
 - **Influence on Beta (Slope)**:
   
